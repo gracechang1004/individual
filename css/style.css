@@ -1,0 +1,65 @@
+body{
+  font-family: 'Fira Sans', serif; /* Test for this*/
+  margin: 0;
+  padding: 0;
+  font-size: 16pt; /* test for this! Make all sizes em or rem */
+}
+
+/* Navbar */
+header{
+  background: #fff;
+  border-bottom: 3px solid #50C7C7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_links{
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+.nav_item a{
+  color: black;
+  text-decoration: none;
+}
+
+.nav_item a:hover, a:focus{
+  color: #50C7C7;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+
+
+@media screen and (min-width: 850px){
+
+/* Navbar */
+
+  header{
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  .nav_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  .nav_item a{
+    padding: 10px;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  #logo {
+    animation: none;
+  }
+}
