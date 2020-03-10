@@ -9,6 +9,7 @@ a.skip{
   background: #f0f0f0;
   left: 0;
   position: absolute;
+  top:-41px;
   -webkit-transition: top 3s ease-out;
   transition: top 3s ease-out;
   z-index: 1;
