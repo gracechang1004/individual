@@ -1,19 +1,40 @@
 body{
-  font-family: 'Fira Sans', serif; /* Test for this*/
+  font-family: 'Open Sans', serif; /* Test for this*/
   margin: 0;
   padding: 0;
   font-size: 16pt; /* test for this! Make all sizes em or rem */
 }
 
-/* Navbar */
+footer {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  padding:20px;
+  text-align: center;
+}
+/* Logo and Navbar */
 header{
-  background: #fff;
-  border-bottom: 3px solid #50C7C7;
+  background: #1a1a1a;
+  border-bottom: 3px solid #8A817C;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+header img {
+  display:flex;
+  height: 75px;
+  width: 75px;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-family: 'Poly', Palatino;
+  color:#1a1a1a;
+}
+
 
 .nav_links{
 	flex-wrap: wrap;
@@ -21,17 +42,43 @@ header{
 }
 
 .nav_item a{
-  color: black;
+  color: #f0f0f0;
   text-decoration: none;
 }
 
 .nav_item a:hover, a:focus{
-  color: #50C7C7;
-  text-decoration: underline;
-  -webkit-text-decoration-style: dotted;
-          text-decoration-style: dotted;
+  color: #e1a87a;
 }
 
+.fa {
+  padding-top: 10px;
+  padding-right: 10px;
+  font-size: 50px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  color:#e1a87a;
+}
+
+.fa-facebook {
+  color: #f0f0f0;
+}
+
+.fa-twitter {
+  color: #f0f0f0;
+}
+
+.fa-linkedin {
+  color: #f0f0f0;
+}
+
+.fa-instagram {
+  color: #f0f0f0;
+}
 
 @media screen and (min-width: 850px){
 
@@ -42,8 +89,17 @@ header{
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+
   }
 
+  li a.active {
+    color: #e1a87a;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
+    text-decoration-style: dotted;
+
+
+  }
 
   .nav_links{
     display: flex;
