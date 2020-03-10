@@ -5,6 +5,18 @@ body{
   font-size: 16pt; /* test for this! Make all sizes em or rem */
 }
 
+a.skip{
+  background: #f0f0f0;
+  left: 0;
+  position: absolute;
+  -webkit-transition: top 3s ease-out;
+  transition: top 3s ease-out;
+  z-index: 1;
+  color:#151515;
+  border: solid #151515;
+  border-radius: 0.5;
+}
+
 footer {
   background-color: #1a1a1a;
   color: #f0f0f0;
@@ -35,7 +47,6 @@ h1 {
   color:#1a1a1a;
 }
 
-
 .nav_links{
 	flex-wrap: wrap;
 	list-style: none;
@@ -50,6 +61,14 @@ h1 {
   color: #e1a87a;
 }
 
+/* Footer and Social Media Links*/
+
+footer {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  padding:20px;
+  text-align: center;
+}
 .fa {
   padding-top: 10px;
   padding-right: 10px;
