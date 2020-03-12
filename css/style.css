@@ -64,33 +64,57 @@ h1 {
   color: #e1a87a;
 }
 
+/* MAIN PAGE */
+
 .main-container{
   display:grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
 }
 
-.main-first-img img{
+.main-first-img{
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
-  object-fit: contain;
+}
+
+.main-first-img img {
+  display:block;
+  object-fit: cover;
   overflow: hidden;
+  height:100%;
   width:100%;
-  height:auto;
   opacity:0.7;
+  filter: brightness(75%);
+}
 
-
+.main-second-img{
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 4;
 }
 
 .main-second-img img{
-  grid-column: 3 / span 2;
-  grid-row: 3 / span 2;
-  object-fit: contain;
+  display:block;
+  object-fit: cover;
   overflow: hidden;
   width:100%;
-  height:auto;
+  height:100%;
   opacity:0.7;
+  filter: brightness(75%);
+}
 
+.main-third-img{
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 2;
+}
+
+.main-third-img img{
+  display: block;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  filter: brightness(75%);
 }
 
 /* Footer + Nav + Social Media Links*/
