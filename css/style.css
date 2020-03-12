@@ -67,7 +67,7 @@ h1 {
 /* MAIN PAGE */
 .intro{
   display: flex;
-  margin: 70px 40px 60px;
+  margin: 5% 5% 5%;
   justify-content: center;
   align-items:center;
 }
