@@ -67,7 +67,7 @@ h1 {
 /* MAIN PAGE */
 .intro{
   display: flex;
-  margin: 5% 5% 5%;
+  margin: 70px 40px 60px;
   justify-content: center;
   align-items:center;
 }
@@ -87,8 +87,8 @@ h1 {
 
 .main-container{
   display:grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
 }
 
 .main-first-img{
@@ -96,43 +96,9 @@ h1 {
   grid-row: 1 / span 3;
 }
 
-.main-first-img img {
-  display:block;
-  object-fit: cover;
-  overflow: hidden;
-  height:100%;
-  width:100%;
-  opacity:0.9;
-  filter: brightness(50%);
-}
-
-
-/*
-.button1 a {
-  width: 200px;
-  padding: 12px 48px;
-  text-align: center;
-  color: white;
-  border: solid 2px black;
-}
-
-.main-first-img .button1 {
-  opacity: 1;
-}
-*/
 .main-second-img{
   grid-column: 4 / span 3;
   grid-row: 1 / span 6;
-}
-
-.main-second-img img{
-  display:block;
-  object-fit: cover;
-  overflow: hidden;
-  width:100%;
-  height:100%;
-  opacity:0.9;
-  filter: brightness(50%);
 }
 
 .main-third-img{
@@ -140,19 +106,82 @@ h1 {
   grid-row: 4 / span 3;
 }
 
-.main-third-img:hover{
-
-}
-
-.main-third-img img{
-  display: block;
+.main-first-img img, .main-second-img img, .main-third-img img{
+  display:block;
   object-fit: cover;
   overflow: hidden;
-  width: 100%;
-  height: 100%;
-  opacity: 0.9;
+  height:100%;
+  width:100%;
+  opacity:0.9;
+  transition: opacity .35s ease;
   filter: brightness(50%);
 }
+
+
+/*BUTTONS!!*/
+
+.button1 {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  opacity: 0;
+  transition: opacity .35s ease;
+  z-index:1;
+  margin: auto;
+}
+
+.button2 {
+  grid-column: 5 / span 1;
+  grid-row: 3 / span 2;
+  opacity: 0;
+  transition: opacity .35s ease;
+  z-index:1;
+  margin: auto;
+}
+
+.button3 {
+  grid-column: 2 / span 1;
+  grid-row: 5 / span 1;
+  opacity: 0;
+  transition: opacity .35s ease;
+  z-index:1;
+  margin: auto;
+}
+
+.button1 a, .button2 a, .button3 a{
+  padding:5px;
+  color: white;
+  border: solid 2px white;
+}
+
+.button1:hover, .button2:hover, .button3:hover {
+  opacity:1;
+}
+
+.main-first-img img:hover{
+  opacity:1;
+}
+
+.main-first-img:hover ~ .button1{
+  opacity:1;
+}
+
+.main-second-img img:hover{
+  opacity:1;
+}
+
+.main-second-img:hover ~ .button2{
+  opacity:1;
+}
+
+.main-third-img img:hover{
+  opacity:1;
+}
+
+.main-third-img:hover ~ .button3{
+  opacity:1;
+}
+
+
 
 
 /* Footer + Nav + Social Media Links*/
