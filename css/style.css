@@ -38,8 +38,8 @@ header img {
   height: 75px;
   width: 75px;
   margin-left: 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 h1 {
@@ -67,38 +67,33 @@ h1 {
 /* MAIN PAGE */
 .intro{
   display: flex;
-  padding: 20px 40px 40px;
+  margin: 70px 40px 60px;
+  justify-content: center;
+  align-items:center;
 }
 
-.intro-image{
-  margin: 20px 30px 0 0;
-  width: 200px;
-  object-fit: contain;
-  align-self: flex-start;
-}
-
-.intro-text{
-  flex: 1 1 auto;
-}
-
-.profile-picture{
-  display:flex;
-  float:left;
-  margin-left: 50px;
-  margin-right: 50px;
+.intro-picture{
+  margin-left: 250px;
+  margin-right: 150px;
   max-height: 600px;
 }
 
+.intro-text{
+  margin-right: 250px;
+  font-size: 100%;
+}
+
+/* MAIN PAGE PICTURES AND BUTTONS*/
 
 .main-container{
   display:grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
 }
 
 .main-first-img{
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 2;
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 3;
 }
 
 .main-first-img img {
@@ -111,9 +106,23 @@ h1 {
   filter: brightness(50%);
 }
 
+
+/*
+.button1 a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px black;
+}
+
+.main-first-img .button1 {
+  opacity: 1;
+}
+*/
 .main-second-img{
-  grid-column: 3 / span 2;
-  grid-row: 1 / span 4;
+  grid-column: 4 / span 3;
+  grid-row: 1 / span 6;
 }
 
 .main-second-img img{
@@ -127,8 +136,12 @@ h1 {
 }
 
 .main-third-img{
-  grid-column: 1 / span 2;
-  grid-row: 3 / span 2;
+  grid-column: 1 / span 3;
+  grid-row: 4 / span 3;
+}
+
+.main-third-img:hover{
+
 }
 
 .main-third-img img{
@@ -140,6 +153,7 @@ h1 {
   opacity: 0.9;
   filter: brightness(50%);
 }
+
 
 /* Footer + Nav + Social Media Links*/
 
@@ -195,6 +209,9 @@ footer {
   color: #f0f0f0;
 }
 
+
+
+
 @media screen and (min-width: 850px){
 
 /* Navbar */
@@ -230,7 +247,7 @@ footer {
   }
 
   .footer_nav_links .nav_item a{
-    margin-right:70px;
+    margin:70px;
   }
 }
 
