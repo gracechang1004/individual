@@ -68,15 +68,17 @@ h1 {
 .intro{
   display: flex;
   padding: 20px 40px 40px;
-  &-image {
-    margin: 20px 30px 0 0;
-    width: 200px;
-    object-fit: contain;
-    align-self: flex-start;
-  }
-  &-text {
-    flex: 1 1 auto;
-  }
+}
+
+.intro-image{
+  margin: 20px 30px 0 0;
+  width: 200px;
+  object-fit: contain;
+  align-self: flex-start;
+}
+
+.intro-text{
+  flex: 1 1 auto;
 }
 
 .profile-picture{
