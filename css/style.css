@@ -115,7 +115,6 @@ h1 {
   filter: brightness(50%);
 }
 
-
 /*BUTTONS!!*/
 
 .button1 {
@@ -180,7 +179,75 @@ h1 {
 }
 
 
+/*CONTACT PAGE IMG AND FORM*/
 
+.about-container {
+  position: relative;
+}
+
+.about-container img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+  filter: brightness(50%)
+}
+
+.about-text {
+  display:block;
+  font-size:2vw;
+  margin-left:50px;
+  margin-top:150px;
+  position:absolute;
+  z-index: 1;
+  color: #f0f0f0;
+}
+
+.about-text h1{
+  color: #f0f0f0;
+}
+
+div.form {
+  display:block;
+  text-align:center;
+}
+
+.form {
+  display:inline-block;
+  padding:20px 60px 20px 60px;
+}
+
+.form-items label{
+  text-align:left;
+
+}
+
+input[type=text], input[type=email], textarea {
+  padding: 12px;
+  border: 1px solid #cccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.form-items button{
+  color: #1a1a1a;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align:right;
+}
+
+.form-items button:hover {
+  background-color: #e1a87a;
+  color:#f0f0f0;
+}
+
+#firstname, #lastname, #email, #message {
+  width: 70%;
+  font-size:15px;
+}
 
 /* Footer + Nav + Social Media Links*/
 
@@ -235,8 +302,6 @@ footer {
 .fa-instagram {
   color: #f0f0f0;
 }
-
-
 
 
 @media screen and (min-width: 850px){
