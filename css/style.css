@@ -40,7 +40,7 @@ header img {
   margin-bottom: 15px;
 }
 
-h1 {
+h1, h2{
   font-family: 'Poly', Palatino;
   color:#1a1a1a;
 }
@@ -63,21 +63,25 @@ h1 {
 }
 
 /* MAIN PAGE */
+
+.main {
+  padding-top:20px;
+}
 .intro{
   display: flex;
-  margin: 70px 40px 60px;
+  margin: 70px 0px 90px 0px;
   justify-content: center;
   align-items:center;
 }
 
 .intro-picture{
-  margin-left: 250px;
-  margin-right: 150px;
+  margin-left: 10%;
+  margin-right: 100px;
   max-height: 600px;
 }
 
 .intro-text{
-  margin-right: 250px;
+  margin-right: 10%;
   font-size: 100%;
 }
 
@@ -176,14 +180,51 @@ h1 {
   opacity:1;
 }
 
+/*ABOUT PAGE PICTURE*/
+
+.about-picture{
+  width:500px;
+  height:370px;
+  margin-left:10%;
+}
+
+/*ABOUT BACKGROUND*/
+
+.background {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  margin:7% 40px 7%;
+}
+
+.background-text{
+  margin-left:75px;
+  margin-right:10%;
+  font-size:100%;
+}
+
+.family{
+  display:flex;
+  width:100%;
+  background-color:#e1a87a;
+}
+
+.family-text {
+  display:inline-block;
+}
+
+.family-picture {
+  display:inline-block;
+}
+
 
 /*CONTACT PAGE IMG AND FORM*/
 
-.about-container {
+.contact-container {
   position: relative;
 }
 
-.about-container img {
+.contact-container img {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -191,17 +232,17 @@ h1 {
   filter: brightness(50%)
 }
 
-.about-text {
+.contact-text {
   display:block;
-  font-size:2vw;
+  font-size:2.5vw;
   margin-left:50px;
-  margin-top:175px;
+  margin-top:160px;
   position:absolute;
   z-index: 1;
   color: #f0f0f0;
 }
 
-.about-text h1{
+.contact-text h1{
   color: #f0f0f0;
 }
 
@@ -212,7 +253,9 @@ h1 {
 }
 
 .form-items label{
-  text-align:left;
+  display:block;
+  float:left;
+  margin-left: 14%;
 }
 
 input[type=text], input[type=email], textarea {
@@ -222,6 +265,10 @@ input[type=text], input[type=email], textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+}
+
+input:invalid {
+  border: 1px solid #FF0000;
 }
 
 .form-items button{
