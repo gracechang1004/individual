@@ -146,15 +146,21 @@ h1 {
 
 .button1 a, .button2 a, .button3 a{
   padding:5px;
-  color: white;
-  border: solid 2px white;
+  color: #f0f0f0;
+  border: solid 2px #f0f0f0;
+  text-decoration: none;
+}
+
+.button1 a:hover, .button2 a:hover, .button3 a:hover {
+	color: #e1a87a;
+  	border: solid 2px #e1a87a;
 }
 
 .button1:hover, .button2:hover, .button3:hover {
   opacity:1;
 }
 
-.main-first-img img:hover{
+.main-first-img img:hover, .main-second-img img:hover, .main-third-img img:hover{
   opacity:1;
 }
 
@@ -162,15 +168,7 @@ h1 {
   opacity:1;
 }
 
-.main-second-img img:hover{
-  opacity:1;
-}
-
 .main-second-img:hover ~ .button2{
-  opacity:1;
-}
-
-.main-third-img img:hover{
   opacity:1;
 }
 
