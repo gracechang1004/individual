@@ -198,11 +198,15 @@ h1, h2{
   margin-left:5%;
   margin-right:5%;
   font-size:100%;
+  margin-top:5%;
+  margin-bottom:5%;
 }
 
 .background-picture{
   width:35%;
   margin-left:8%;
+  margin-top:auto;
+  margin-bottom:auto;
 }
 
 .family{
@@ -216,17 +220,18 @@ h1, h2{
 .family-text {
   grid-column: 1 / span 1;
   font-size:100%;
-  margin:5%;
+  margin:10%;
+  margin-top:auto;
+  margin-bottom:auto;
 }
 
 .ellie {
   grid-column:2 / span 1;
   height:100%;
   background-attachment: fixed;
-  background-position:0 0;
-  background-repeat:no-repeat;
-  background-size:cover;
-  z-index:2;
+  background-position: 150px top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
