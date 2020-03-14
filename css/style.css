@@ -180,41 +180,53 @@ h1, h2{
   opacity:1;
 }
 
-/*ABOUT PAGE PICTURE*/
-
-.about-picture{
-  width:500px;
-  height:370px;
-  margin-left:10%;
-}
-
 /*ABOUT BACKGROUND*/
+
+.about{
+  padding-top:10%;
+}
 
 .background {
   display:flex;
   justify-content: center;
   align-items:center;
-  margin:7% 40px 7%;
+  margin-bottom: 10%;
+  height:100%;
 }
 
 .background-text{
-  margin-left:75px;
-  margin-right:10%;
+  margin-left:5%;
+  margin-right:5%;
   font-size:100%;
 }
 
+.background-picture{
+  width:35%;
+  margin-left:8%;
+}
+
 .family{
-  display:flex;
-  width:100%;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 800px;
   background-color:#e1a87a;
+
 }
 
 .family-text {
-  display:inline-block;
+  grid-column: 1 / span 1;
+  font-size:100%;
+  margin:5%;
 }
 
-.family-picture {
-  display:inline-block;
+.ellie {
+  grid-column:2 / span 1;
+  height:100%;
+  background-attachment: fixed;
+  background-position:0 0;
+  background-repeat:no-repeat;
+  background-size:cover;
+  z-index:2;
 }
 
 

@@ -7,8 +7,6 @@
     <link href="https://fonts.googleapis.com/css?family=Poly|Proxima+Nova" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/blacklogo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src = "js/contact.js"></script>
-
 
     <title>Grace Chang Personal Website</title>
   </head>
@@ -45,28 +43,29 @@
     </div>
 
     <div class="form">
-      <form action="https://formspree.io/mleldvzg" method="POST" onsubmit = "return false"></form>
+      <form action="https://formspree.io/mleldvzg" method="POST">
       <div class="form-items">
         <h2>Please enter your information here</h2>
         <label for="fname">First Name</label>
         <br>
-          <input type="text" id="firstname" placeholder="Your first name">
+          <input type="text" name="firstname" id="firstname" placeholder="Your first name">
         <br><br>
         <label for="lname">Last Name</label>
         <br>
-          <input type="text" id="lastname" placeholder="Your last name">
+          <input type="text" name="lastname" id="lastname" placeholder="Your last name">
         <br><br>
         <label for="email">Email</label>
         <br>
-          <input type="email" id="email" placeholder="Your email">
+          <input type="email" name="email" id="email" placeholder="Your email">
         <br><br>
         <label for="message">Message</label>
         <br>
-          <textarea id="message" rows="6" placeholder="Leave your message here"></textarea>
+          <textarea name="message" id="message" rows="6" placeholder="Leave your message here"></textarea>
         <br>
-        <button onclick = "sendContact()">Send</button>
+        <button type="submit">Send</button>
         <br>
       </div>
+    </form>
     </div>
 
 
