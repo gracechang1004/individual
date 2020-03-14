@@ -229,12 +229,12 @@ h1, h2{
 
 .ellie {
   grid-column:2 / span 1;
-  height:100%;
-  background-image:url('../images/ellie.jpg');
   background-attachment: fixed;
   background-position: 150px top;
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url('../images/ellie.jpg');
+
 }
 
 /*GALLERY CONTAINER*/
