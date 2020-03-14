@@ -31,6 +31,8 @@ header{
   align-items: center;
 }
 
+
+
 header img {
   display:flex;
   height: 75px;
@@ -230,12 +232,59 @@ h1, h2{
 .ellie {
   grid-column:2 / span 1;
   height:100%;
+  background-image:url('../images/ellie.jpg');
   background-attachment: fixed;
   background-position: 150px top;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/*GALLERY CONTAINER*/
+
+.gallery{
+  display:block;
+  background-color:#1a1a1a;
+  overflow:hidden;
+  padding:10%;
+}
+
+.gallery-text{
+  text-align:center;
+}
+
+.gallery-text h1{
+}
+
+.gallery-text p{
+  margin-top: 5%;
+  margin-left:70%;
+  color: #f0f0f0;
+
+}
+
+/*TYPEWRITER EFFECT*/
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+.teleport h1:nth-child(1) {
+  border-right: solid 3px #e1a87a;
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 1.5em;
+  color: #f0f0f0;
+  animation: animated-text 2s steps(20,end) 1s 1 normal both,
+             animated-cursor 800ms steps(20,end) infinite;
+}
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 21.6em;}
+}
+
+@keyframes animated-cursor{
+  from{border-right-color: #f0f0f0;}
+  to{border-right-color: transparent;}
+}
 
 /*CONTACT PAGE IMG AND FORM*/
 
