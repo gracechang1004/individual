@@ -45,6 +45,10 @@ h1, h2{
   color:#1a1a1a;
 }
 
+.nav{
+  margin-bottom:0px;
+}
+
 .nav_links{
 	flex-wrap: wrap;
 	list-style: none;
@@ -68,8 +72,8 @@ h1, h2{
   display: flex;
   justify-content: center;
   align-items:center;
-  padding-top:10%;
-  padding-bottom:10%;
+  height:100vh;
+
 }
 
 .intro-picture{
@@ -77,7 +81,7 @@ h1, h2{
   margin-right: 100px;
   margin-top:auto;
   margin-bottom:auto;
-  max-height: 600px;
+  max-width:35vw;
 }
 
 .intro-text{
@@ -92,7 +96,7 @@ h1, h2{
 .main-container{
   display:grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 17vh);
 }
 
 .main-first-img{
@@ -124,7 +128,7 @@ h1, h2{
 /*BUTTONS!!*/
 
 .button1 {
-  grid-column: 2 / span 1;
+  grid-column: 1 / span 3;
   grid-row: 2 / span 1;
   opacity: 0;
   transition: opacity .35s ease;
@@ -133,7 +137,7 @@ h1, h2{
 }
 
 .button2 {
-  grid-column: 5 / span 1;
+  grid-column: 4 / span 3;
   grid-row: 3 / span 2;
   opacity: 0;
   transition: opacity .35s ease;
@@ -142,7 +146,7 @@ h1, h2{
 }
 
 .button3 {
-  grid-column: 2 / span 1;
+  grid-column: 1 / span 3;
   grid-row: 5 / span 1;
   opacity: 0;
   transition: opacity .35s ease;
@@ -184,24 +188,17 @@ h1, h2{
 
 /*ABOUT BACKGROUND*/
 
-.about{
-  padding-top:10%;
-}
-
 .background {
   display:flex;
   justify-content: center;
   align-items:center;
-  margin-bottom: 10%;
-  height:100%;
+  height:100vh;
 }
 
 .background-text{
   margin-left:5%;
   margin-right:5%;
   font-size:100%;
-  margin-top:5%;
-  margin-bottom:5%;
 }
 
 .background-picture{
@@ -214,7 +211,7 @@ h1, h2{
 .family{
   display:grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 800px;
+  grid-template-rows: 100vh;
   background-color:#e1a87a;
 }
 
@@ -238,7 +235,7 @@ h1, h2{
 .funfacts{
   display:grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 800px;
+  grid-template-rows: 100vh;
   background-color:#1a1a1a;
 }
 
@@ -262,28 +259,25 @@ h1, h2{
 .gallery{
   display:block;
   background-color:#1a1a1a;
-  overflow:hidden;
-  padding:10%;
+  height:50vh;
+  padding:1%;
 }
 
-.gallery-text{
+.typewriter{
+  margin-left:15%;
+  margin-top:10%;
+}
+
+.gallery-text {
+  min-height:100vh;
   text-align:center;
-}
-
-.gallery-text h1{
-}
-
-.gallery-text p{
-  margin-top: 5%;
-  margin-left:70%;
-  color: #f0f0f0;
-
+  background-image: url('../images/IMG_9169.JPG');
 }
 
 /*TYPEWRITER EFFECT*/
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
-.teleport h1:nth-child(1) {
+.typewriter h1:nth-child(1) {
   border-right: solid 3px #e1a87a;
   white-space: nowrap;
   overflow: hidden;    
@@ -293,6 +287,8 @@ h1, h2{
   animation: animated-text 2s steps(20,end) 1s 1 normal both,
              animated-cursor 800ms steps(20,end) infinite;
 }
+
+
 
 @keyframes animated-text{
   from{width: 0;}
@@ -308,10 +304,13 @@ h1, h2{
 
 .contact-container {
   position: relative;
+  height:80vh;
 }
 
 .contact-container img {
-  width: 100%;
+  height:80vh;
+  max-width:100vw;
+  object-fit:cover;
   margin-left: auto;
   margin-right: auto;
   opacity: 0.9;
@@ -439,6 +438,7 @@ footer {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom:0;
   }
 
   li a.active {
