@@ -352,9 +352,14 @@ li a.active {
 
 #greece, #cali, #florida, #chicago{
   background-color:#eeeeee;
-  padding:1%;
+  padding:2%;
   height:100vh;
 }
+
+#greece h2, #cali h2, #florida h2, #chicago h2 {
+  margin-left:5%;
+}
+
 .gallery1, .gallery2, .gallery3, .gallery4 {
   display: flex;
   flex-wrap: wrap;
