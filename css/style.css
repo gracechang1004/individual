@@ -332,8 +332,8 @@ input[type=text], input[type=email], textarea {
   resize: vertical;
 }
 
-input:invalid {
-  border: 1px solid #FF0000;
+input:invalid,textarea:invalid {
+  border: 1px solid #e1a87a;
 }
 
 .form-items button{
