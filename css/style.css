@@ -216,7 +216,6 @@ h1, h2{
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 800px;
   background-color:#e1a87a;
-
 }
 
 .family-text {
@@ -236,6 +235,28 @@ h1, h2{
   background-size: cover;
 }
 
+.funfacts{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 800px;
+  background-color:#1a1a1a;
+}
+
+.funfacts-picture{
+  grid-column:1 / span 1;
+  background-image: url('../images/zipline.jpg');
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.funfacts-text{
+  grid-column: 2 / span 1;
+  font-size:100%;
+  margin:10%;
+  margin-top:auto;
+  margin-bottom:auto;
+  color:#f0f0f0;
+}
 /*GALLERY CONTAINER*/
 
 .gallery{
