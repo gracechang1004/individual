@@ -350,11 +350,12 @@ li a.active {
 
 /*GALLERY PAGE GALLERY1*/
 
-#cali {
-  background-color:
-  ;
+#greece, #cali, #florida, #chicago{
+  background-color:#eeeeee;
+  padding:1%;
+  height:100vh;
 }
-.gallery {
+.gallery1, .gallery2, .gallery3, .gallery4 {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
