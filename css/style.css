@@ -494,6 +494,21 @@ figure{
   color:#f0f0f0;
 }
 
+/*RESUME PAGE*/
+.resume a{
+  padding:10px;
+  color: #1a1a1a;
+  border: solid 2px #1a1a1a;
+  text-decoration: none;
+}
+
+.resume a:hover, a:hover, a:hover {
+  color: #1a1a1a;
+  border: solid 2px #e1a87a;
+  background-color:#e1a87a;
+}
+
+
 /*CONTACT PAGE IMG AND FORM*/
 
 .contact-container {
