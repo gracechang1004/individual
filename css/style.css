@@ -262,7 +262,9 @@ li a.active {
 }
 
 .fun-button{
-  text-align:center;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
   background-color:transparent;
   border: 1px solid #f0f0f0;
   padding: 15px 25px;
@@ -301,7 +303,7 @@ li a.active {
 .gallery-container img {
   position:relative;
   width:100%;
-  max-height:100vh;
+  height:100vh;
   object-fit:cover;
   overflow:hidden;
   opacity: 0.9;
@@ -403,6 +405,27 @@ li a.active {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+}
+
+.gallery-button {
+  display:block;
+  margin-top:2%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  background-color:transparent;
+  border: 1px solid #e1a87a;
+  padding: 15px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #1a1a1a;
+  transition: background-color .2s ease;
+}
+
+.gallery-button:hover{
+  border: 1px solid #e1a87a;
+  background-color: #e1a87a;
+  color:#f0f0f0;
 }
 
 /*CONTACT PAGE IMG AND FORM*/
@@ -539,9 +562,15 @@ footer {
 
 /* Navbar */
 
-
+}
 @media (prefers-reduced-motion: reduce) {
   #logo {
     animation: none;
+  }
+}
+
+@media only screen and (max-device-width: 1400px) {
+  .parallax {
+    background-attachment: scroll; /*turn off parallax for mobile devices*/
   }
 }
