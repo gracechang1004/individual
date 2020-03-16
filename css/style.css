@@ -322,41 +322,57 @@ li a.active {
 }
 
 .gallery-text h1 {
-  color: #f0f0f0
+  color: #f0f0f0;
 }
 
 .books {
-  margin-top:20%;
+  margin-top:26vh;
   display:flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content:center;
   align-content: center;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .book1-container, .book2-container, .book3-container, .book4-container{
   width:150px;
-  height:250px;
-  background:#2e517d;
+  height:190px;
+  background:#1a1a1a;
   position:relative;
   transform:translate(-50%,-50%);
   perspective:1000px;
+  margin:5% 0 5% 10%;
 }
 
 .cover1, .cover2, .cover3, .cover4{
   width:130px;
-  height:250px;
-  position:relative;
+  height:190px;
+  position:absolute;
   left:20px;
-  background-color:#345b8c;
+  background-color:#474747;
   transform:rotateY(-20deg);
   transform-style:preserve-3d;
   transform-origin:left;
   transition:all .5s ease-in;
 }
 
-.book1-container:hover .cover1, .book2-container2:hover .cover2, .book3-container:hover .cover3, .book4-container:hover .cover4{
+.book1-container:hover .cover1, .book2-container:hover .cover2, .book3-container:hover .cover3, .book4-container:hover .cover4{
   transform:rotateY(-180deg);
+}
+
+figure{
+  margin:0;
+  display:block;
+  position:absolute;
+  width:100%;
+  height:100%;
+}
+figure.front{
+}
+
+figure.back{
+
 }
 
 .hit-the-floor {
