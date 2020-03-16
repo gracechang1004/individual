@@ -581,7 +581,7 @@ figure{
   grid-column:2 / span 2;
 }
 
-.resume-container a{
+.resume-content a {
   text-decoration: none;
   color:#e1a87a;
 }
