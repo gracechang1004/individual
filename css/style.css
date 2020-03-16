@@ -336,7 +336,7 @@ li a.active {
 }
 
 .book1-container, .book2-container, .book3-container, .book4-container{
-  width:150px;
+  width:160px;
   height:190px;
   background:#1a1a1a;
   position:relative;
@@ -361,6 +361,10 @@ li a.active {
   transform:rotateY(-180deg);
 }
 
+.book1-container:focus .cover1, .book2-container:focus .cover2, .book3-container:focus .cover3, .book4-container:focus .cover4{
+  transform:rotateY(-180deg);
+}
+
 .book-button {
   position:absolute;
   display:block;
@@ -375,7 +379,7 @@ li a.active {
   transition: background-color .2s ease;
 }
 
-.book-button:hover{
+.book-button:hover .book-button:focus{
   border: 1px solid #e1a87a;
   background-color: #e1a87a;
   color:#1a1a1a;
