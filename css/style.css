@@ -598,8 +598,8 @@ figure{
   color:#e1a87a;
 }
 
-.jobs ul{
-	margin:10px;
+.jobs ul li{
+	margin:15px;
 }
 
 ul.dashed{
