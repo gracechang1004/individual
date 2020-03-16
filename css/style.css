@@ -131,7 +131,7 @@ li a.active {
   width:100%;
   opacity:0.9;
   transition: opacity .35s ease;
-  filter: brightness(50%);
+  filter: brightness(60%);
 }
 
 /*BUTTONS!!*/
@@ -170,17 +170,14 @@ li a.active {
   text-decoration: none;
 }
 
-.button1 a:hover, .button2 a:hover, .button3 a:hover {
-
-  background-color:none;
-}
-
 .button1:hover, .button2:hover, .button3:hover {
   opacity:1;
 }
 
 .main-first-img img:hover, .main-second-img img:hover, .main-third-img img:hover{
   opacity:1;
+  filter: brightness(80%);
+
 }
 
 .main-first-img:hover ~ .button1{
@@ -524,6 +521,7 @@ figure{
 .contact-container {
   position: relative;
   height:100vh;
+  background-color:#1a1a1a;
 }
 
 .contact-container img {
