@@ -12,7 +12,7 @@ a.skip{
   top:-41px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
-  z-index: 10;
+  z-index: 1;
 }
 
 a.skip:focus{
@@ -346,7 +346,7 @@ li a.active {
 }
 
 .cover1, .cover2, .cover3, .cover4{
-  width:138px;
+  width:140px;
   height:190px;
   position:absolute;
   left:20px;
@@ -368,8 +368,8 @@ li a.active {
 .book-button {
   position:absolute;
   display:block;
-  top:80px;
-  left:33px;
+  top:75px;
+  left:37px;
   background-color:transparent;
   border: 1px solid #f0f0f0;
   padding: 8px 8px;
