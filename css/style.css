@@ -366,19 +366,19 @@ li a.active {
   transform:rotateY(-180deg);
 }
 
-.book-button1:focus .cover1{
+.book-button1:focus + .cover1{
   transform:rotateY(-180deg);
 }
 
-.book-button2:focus .cover2{
+.book-button2:focus + .cover2{
   transform:rotateY(-180deg);
 }
 
-.book-button3:focus .cover3{
+.book-button3:focus + .cover3{
   transform:rotateY(-180deg);
 }
 
-.book-button4:focus .cover4{
+.book-button4:focus + .cover4{
   transform:rotateY(-180deg);
 }
 
@@ -409,7 +409,7 @@ figure{
   font-size: 1.2em;
   font-weight: bold;
   font-family: 'Proxima Nova', sans-serif;
-  text-shadow: 
+  text-shadow:
     0 1px 0 #ccc, 
     0 2px 0 #bbb, 
     0 2px 0 #b9b9b9, 
