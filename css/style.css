@@ -74,7 +74,6 @@ li a.active {
   justify-content: center;
   align-items:center;
   height:100vh;
-
 }
 
 .intro-picture{
@@ -357,15 +356,33 @@ li a.active {
   transition:all .5s ease-in;
 }
 
+.book-button1:hover, .book-button1:focus, .book-button2:hover, .book-button2:focus,.book-button3:hover, .book-button3:focus,.book-button4:hover, .book-button4:focus{
+  border: 1px solid #e1a87a;
+  background-color: #e1a87a;
+  color:#1a1a1a;
+}
+
 .book1-container:hover .cover1, .book2-container:hover .cover2, .book3-container:hover .cover3, .book4-container:hover .cover4{
   transform:rotateY(-180deg);
 }
 
-.book-button:focus .cover1, .book-button:focus .cover2, .book-button:focus .cover3, .book-button:focus .cover4{
+.book-button1:focus .cover1{
   transform:rotateY(-180deg);
 }
 
-.book-button {
+.book-button2:focus .cover2{
+  transform:rotateY(-180deg);
+}
+
+.book-button3:focus .cover3{
+  transform:rotateY(-180deg);
+}
+
+.book-button4:focus .cover4{
+  transform:rotateY(-180deg);
+}
+
+.book-button1, .book-button2, .book-button3, .book-button4{
   position:absolute;
   display:block;
   top:75px;
@@ -377,12 +394,6 @@ li a.active {
   cursor: pointer;
   color: #f0f0f0;
   transition: background-color .2s ease;
-}
-
-.book-button:hover, .book-button:focus{
-  border: 1px solid #e1a87a;
-  background-color: #e1a87a;
-  color:#1a1a1a;
 }
 
 figure{
