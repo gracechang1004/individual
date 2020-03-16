@@ -898,10 +898,40 @@ footer {
 	    display: none;
 	}
 
+	.travels button {
+		visibility:hidden;
+	    clear: both;
+	    float: left;
+	    margin: 10px auto 5px 20px;
+	    width: 28%;
+	    display: none;
+	}
+
+/* RESUME */
+
+	.resume-content{
+		font-size:0.7em;
+	}
+
+/*CONTACT*/
+	.contact-container{
+		height: 40vh;
+    	width: 100vw;
+	}
+
+	.contact-container img{
+		height: 40vh;
+    	width: 100vw;
+	}
+
+	.form{
+		font-size:0.7em;
+	}
 
 /* FOOTER NAV */
 	footer{
 		height:100px;
+		font-size:0.8em;
 	}
 	.footer_nav_links {
 		visibility:hidden;
@@ -935,6 +965,17 @@ footer {
 	    margin: 10px auto 5px 20px;
 	    width: 28%;
 	    display: none;
+	}
+
+/* RESUME */
+	.resume-text{
+		margin-left:7vw;
+		margin-top:5vh;
+		font-size:0.7em;
+	}
+
+	.resume-content{
+		font-size:0.7em;
 	}
 
 }
