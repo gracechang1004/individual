@@ -587,8 +587,17 @@ figure{
 }
 
 .jobs ul{
-  list-style:circle;
+	margin:10px;
 }
+
+ul.dashed{
+  list-style:none;
+}
+
+ul.dashed > li:before {
+	content:"-  ";
+}
+
 /*CONTACT PAGE IMG AND FORM*/
 
 .contact-container {
