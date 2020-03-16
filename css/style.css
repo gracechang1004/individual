@@ -333,7 +333,7 @@ li a.active {
 }
 
 .books {
-  margin-top:15vh;
+  margin-top:18vh;
   display:flex;
   flex-direction:row;
   justify-content:center;
@@ -480,6 +480,18 @@ figure{
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+}
+
+.gallery-col img:first-child{
+	filter:contrast(130%);
+
+}
+.gallery-col img:nth-child(3n+3) {
+	filter:grayscale(100%);
+}
+
+.gallery-col img:last-child{
+	filter:sepia(30%)
 }
 
 .gallery-button {
