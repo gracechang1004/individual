@@ -326,7 +326,7 @@ li a.active {
 }
 
 .books {
-  margin-top:26vh;
+  margin-top:25vh;
   display:flex;
   flex-direction: row;
   justify-content:center;
@@ -336,7 +336,7 @@ li a.active {
 }
 
 .book1-container, .book2-container, .book3-container, .book4-container{
-  width:150px;
+  width:160px;
   height:190px;
   background:#1a1a1a;
   position:relative;
@@ -346,7 +346,7 @@ li a.active {
 }
 
 .cover1, .cover2, .cover3, .cover4{
-  width:130px;
+  width:140px;
   height:190px;
   position:absolute;
   left:20px;
