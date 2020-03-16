@@ -24,7 +24,6 @@ a.skip:focus{
 /* Logo and Navbar */
 header{
   background: #1a1a1a;
-  border-bottom: 3px solid #8A817C;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
