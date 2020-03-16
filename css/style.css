@@ -328,15 +328,15 @@ li a.active {
 .books {
   margin-top:25vh;
   display:flex;
-  flex-direction: row;
+  flex-direction:row;
   justify-content:center;
-  align-content: center;
-  flex-wrap: wrap;
-  position: relative;
+  align-content:center;
+  flex-wrap:wrap;
+  position:relative;
 }
 
 .book1-container, .book2-container, .book3-container, .book4-container{
-  width:160px;
+  width:150px;
   height:190px;
   background:#1a1a1a;
   position:relative;
@@ -359,6 +359,26 @@ li a.active {
 
 .book1-container:hover .cover1, .book2-container:hover .cover2, .book3-container:hover .cover3, .book4-container:hover .cover4{
   transform:rotateY(-180deg);
+}
+
+.book-button {
+  position:absolute;
+  display:block;
+  top:80px;
+  left:33px;
+  background-color:transparent;
+  border: 1px solid #f0f0f0;
+  padding: 8px 8px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #f0f0f0;
+  transition: background-color .2s ease;
+}
+
+.book-button:hover{
+  border: 1px solid #e1a87a;
+  background-color: #e1a87a;
+  color:#1a1a1a;
 }
 
 figure{
