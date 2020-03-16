@@ -346,7 +346,7 @@ li a.active {
 }
 
 .cover1, .cover2, .cover3, .cover4{
-  width:140px;
+  width:138px;
   height:190px;
   position:absolute;
   left:20px;
@@ -361,7 +361,7 @@ li a.active {
   transform:rotateY(-180deg);
 }
 
-.book1-container:focus .cover1, .book2-container:focus .cover2, .book3-container:focus .cover3, .book4-container:focus .cover4{
+.book-button:focus .cover1, .book-button:focus .cover2, .book-button:focus .cover3, .book-button:focus .cover4{
   transform:rotateY(-180deg);
 }
 
@@ -379,7 +379,7 @@ li a.active {
   transition: background-color .2s ease;
 }
 
-.book-button:hover .book-button:focus{
+.book-button:hover, .book-button:focus{
   border: 1px solid #e1a87a;
   background-color: #e1a87a;
   color:#1a1a1a;
@@ -391,12 +391,6 @@ figure{
   position:absolute;
   width:100%;
   height:100%;
-}
-figure.front{
-}
-
-figure.back{
-
 }
 
 .hit-the-floor {
