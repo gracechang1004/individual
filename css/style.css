@@ -325,9 +325,43 @@ li a.active {
   color: #f0f0f0
 }
 
+.books {
+  margin-top:20%;
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.book1-container, .book2-container, .book3-container, .book4-container{
+  width:150px;
+  height:250px;
+  background:#2e517d;
+  position:relative;
+  transform:translate(-50%,-50%);
+  perspective:1000px;
+}
+
+.cover1, .cover2, .cover3, .cover4{
+  width:130px;
+  height:250px;
+  position:relative;
+  left:20px;
+  background-color:#345b8c;
+  transform:rotateY(-20deg);
+  transform-style:preserve-3d;
+  transform-origin:left;
+  transition:all .5s ease-in;
+}
+
+.book1-container:hover .cover1, .book2-container2:hover .cover2, .book3-container:hover .cover3, .book4-container:hover .cover4{
+  transform:rotateY(-180deg);
+}
+
 .hit-the-floor {
   color: #fff;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
   font-family: 'Proxima Nova', sans-serif;
   text-shadow: 
