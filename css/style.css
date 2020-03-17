@@ -318,7 +318,7 @@ h1, h2{
 }
 
 .typewriter{
-  margin-left:15%;
+  margin-left:0%;
   margin-top:25%;
 }
 
@@ -452,7 +452,7 @@ figure{
   white-space: nowrap;
   overflow: hidden;    
   font-family: 'Source Code Pro', monospace;  
-  font-size: 2em;
+  font-size: 1.6em;
   color: #f0f0f0;
   animation: animated-text 2s steps(20,end) 1s 1 normal both,
              animated-cursor 800ms steps(20,end) infinite;
