@@ -502,11 +502,8 @@ figure{
   width: 100%;
 }
 
-.gallery-col img:first-child{
-	filter:contrast(130%);
-
 }
-.gallery-col img:nth-child(3n+3) {
+.gallery-col img:nth-child(4n+4) {
 	filter:grayscale(100%);
 }
 
@@ -779,10 +776,12 @@ footer {
   }
   .nav > .nav-btn > label {
     display: inline-block;
-    width: 50px;
+    width: 40px;
     height: 50px;
     padding: 13px;
     margin-top:30px;
+    margin-right:20px;
+    z-index:2;
   }
 
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
@@ -790,16 +789,16 @@ footer {
   }
   .nav > .nav-btn > label > span {
     display: block;
-    width: 25px;
     height: 8px;
     border-top: 2px solid #eee;
+    z-index:2;
   }
   .nav > .nav-links {
     position: absolute;
     display: block;
     width: 100%;
     background-color: #191919;
-    height: 0px;
+    height: 50vh;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
     top: 70px;
@@ -813,7 +812,7 @@ footer {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 50vh);
     overflow-y: auto;
   }
 
@@ -842,6 +841,9 @@ footer {
 
 	.main-container{
 		display:grid;
+	  	grid-template-columns: repeat(6, 1fr);
+	  	grid-template-rows:repeat(3, 33vh);
+	  	background-color:#1a1a1a;
 	}
 
 
@@ -956,19 +958,15 @@ footer {
 /* GALLERY */
 	.typewriter-container{
 		visibility:hidden;
-	    clear: both;
-	    float: left;
-	    margin: 10px auto 5px 20px;
-	    width: 28%;
 	    display: none;
 	}
 	.gallery-container{
 		visibility:hidden;
-	    clear: both;
-	    float: left;
-	    margin: 10px auto 5px 20px;
-	    width: 28%;
 	    display: none;
+	}
+
+	#greece, #cali, #florida, #chicago{
+		height:80vh;
 	}
 
 	.travels button {
