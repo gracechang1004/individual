@@ -991,6 +991,7 @@ footer {
 		font-size:0.7em;
 	}
 
+
 /*CONTACT*/
 	.contact-container{
 		height: 40vh;
@@ -1062,10 +1063,10 @@ footer {
 
 	.education {
 	  display:grid;
-	  grid-template-columns: 1fr;
-	  grid-template-rows:repeat(2,1fr);
+	  grid-template-columns: auto;
+	  grid-template-rows:repeat(2, auto);
 	  margin:5%;
-	  height:200px;
+	  margin-top:50px;
 	}
 
 	.education h2{
