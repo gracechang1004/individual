@@ -8,19 +8,21 @@ body{
 }
 
 a.skip{
-  background: #f0f0f0;
+  background: #fff;
   left: 0;
   position: absolute;
-  top:-41px;
+  top:-40px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
+  color:#e1a87a;
 }
 
 a.skip:focus{
-  top:10px;
-  border: solid #151515;
+  top:12vh;
+  border: 2px solid #e1a87a;
   border-radius: 0.5;
+  z-index:1;
 }
 
 /* Logo and Navbar */
@@ -60,7 +62,7 @@ h1, h2{
 .nav > .nav-header > .nav-title {
   display: inline-block;
   font-size: 22px;
-  color: #f0f0f0
+  color: #f0f0f0;
 ;
 }
 
@@ -89,6 +91,7 @@ h1, h2{
 
 .nav > .nav-links > a.active {
   color: #e1a87a;
+  border-bottom: 2px dotted #e1a87a;
 }
 
 .nav > #nav-check {
