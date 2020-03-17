@@ -59,14 +59,14 @@ h1, h2{
   display: inline;
 }
 
-.nav > .nav-header > .nav-title {
+.nav > .nav-header > .nav-logo {
   display: inline-block;
   font-size: 22px;
   color: #f0f0f0;
 ;
 }
 
-.nav > .nav-btn {
+.nav > .nav-hamburger {
   display: none;
 }
 
@@ -767,13 +767,13 @@ footer {
 		margin-left:45vw;
 	}
 
-  .nav > .nav-btn {
+  .nav > .nav-hamburger {
     display: inline-block;
     position: absolute;
     right: 0px;
     top: 0px;
   }
-  .nav > .nav-btn > label {
+  .nav > .nav-hamburger > label {
     display: inline-block;
     width: 40px;
     height: 50px;
@@ -783,10 +783,10 @@ footer {
     z-index:2;
   }
 
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+  .nav > .nav-hamburger > label:hover,.nav  #nav-check:checked ~ .nav-hamburger > label {
     color: #e1a87a;
   }
-  .nav > .nav-btn > label > span {
+  .nav > .nav-hamburger > label > span {
     display: block;
     height: 8px;
     border-top: 2px solid #eee;
