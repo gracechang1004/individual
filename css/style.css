@@ -19,7 +19,7 @@ a.skip{
 }
 
 a.skip:focus{
-  top:12vh;
+  top:15px;
   border: 2px solid #e1a87a;
   border-radius: 0.5;
   z-index:1;
@@ -127,6 +127,7 @@ h1, h2{
 .main-container{
   display:grid;
   grid-template-columns: repeat(6, 1fr);
+  grid-template-rows:repeat(6, 1fr);
   background-color:#1a1a1a;
 }
 
@@ -725,6 +726,9 @@ footer {
 
 .footer_nav_links .nav_item a{
   margin:5px;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#f0f0f0;
 }
 
 .fa {
@@ -759,9 +763,14 @@ footer {
   color: #f0f0f0;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 770px){
 
 /* Navbar */
+	header img{
+		display:block;
+		margin-left:45vw;
+	}
+
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -774,26 +783,26 @@ footer {
     height: 50px;
     padding: 13px;
     margin-top:30px;
-;
   }
+
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
     color: #e1a87a;
   }
   .nav > .nav-btn > label > span {
     display: block;
     width: 25px;
-    height: 10px;
+    height: 8px;
     border-top: 2px solid #eee;
   }
   .nav > .nav-links {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: #333;
+    background-color: #191919;
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: 50px;
+    top: 70px;
     left: 0px;
   }
   .nav > .nav-links > a {
@@ -1011,8 +1020,12 @@ footer {
 	}
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 500px){
 
+	header img{
+		display:block;
+		margin-left:4vw;
+	}
 /* GALLERY */
 	.typewriter-container{
 		visibility:hidden;
