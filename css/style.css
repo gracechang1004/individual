@@ -973,11 +973,7 @@ footer {
 	}
 	.gallery-container{
 		visibility:hidden;
-	    display: none;
-	}
-
-	#greece, #cali, #florida, #chicago{
-		height:80vh;
+    display: none;
 	}
 
 	.travels button {
